@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = "demo-terraform-eks-state-s3-bucket12"
+  bucket = "demo-terraform-eks-state-s3-bucket12"     #always take unique name
 
   lifecycle {
     prevent_destroy = false
